@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+
+<body>
+  
+
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login"></div>
+            <div class="title signup"></div>
+        </div>
+        <div class="form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Giriş Yap</label>
+                <label for="signup" class="slide signup">Üye Ol</label>
+                <div class="slider-tab"></div>
+            </div>
+    
+            <div class="form-inner">
+
+                <form action="#" class="login">
+                    <div class="field">
+                        <input type="text" id="eposta" placeholder="E-posta Adresi" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" id="sifre" placeholder="Şifre" required><i class="fas fa-eye" id="eye" onclick="gorunum()"></i>
+                    </div>
+
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Giriş Yap">
+                    </div>
+                    <br>
+                    <div class="pass-link"><a href="#">Şifreni mi unuttun?</a></div>
+                </form>
+
+
+                <form action="#" class="signup">
+                    <div class="epostileüyeol">
+
+                        <h4 class="epostaüyeol">E-posta ile Üye ol</h4>
+
+                    </div>
+                    <br>
+
+                    <div class="field-ad">
+                        <input type="text" id="ad" placeholder="Ad" required>
+                    </div>
+                    <div class="field-soyad">
+                        <input type="text" id="soyad" placeholder="Soyad" required>
+                    </div>
+
+                    <div class="field">
+                        <input type="text" placeholder="E-posta" required>
+                    </div>
+
+                    <div class="field">
+                        <input type="password" placeholder="Şifre" id="sifre1" required><i class="fas fa-eye" id="eye1" onclick="gorunum1()" style="display:none;"></i>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Tekrar Şifre" id="sifre2" required><i class="fas fa-eye" id="eye2" onclick="gorunum2()" style="display: none;"></i>
+                    </div>
+                    <br>
+                    <div class="checkbox">
+
+                        <input type="checkbox" id="check" onclick="checkbox()">
+                        <h6 class="h6">Haberdar olmak için elektronik ileti almak istiyorum.</h6>
+
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer-1"></div>
+                        <input type="submit" id="mybtn" onclick="kayitbutton()" value="Üye Ol" disabled>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
